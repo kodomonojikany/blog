@@ -1,0 +1,15 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# Git files
+.github
+.git
+
+# MacOS files
+.DS_Store
+
+# Node files
+node_modules
