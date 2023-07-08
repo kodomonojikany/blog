@@ -22,6 +22,8 @@
 - npm install hexo-generator-sitemap --save
 - npm install hexo-abbrlink --save
 - npm i hexo-filter-nofollow --save
+- npm install --save git://github.com/howiefh/hexo-generator-calendar.git
+- npm i hexo-butterfly-article-double-row --save
 # 部署顺序
 1. hexo clean
 2. hexo g

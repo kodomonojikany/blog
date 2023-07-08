@@ -140,3 +140,7 @@ search:
   content: true
   format: html
   template: ./search.xml
+
+#双栏美化
+butterfly_article_double_row:
+  enable: true

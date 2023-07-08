@@ -5,7 +5,7 @@
 nav:
   logo: /image/logo.png # 网站的 logo，支持图片，直接填入图片链接
   display_title: true # 是否显示网站标题，填写 true 或者 false
-  fixed: false # 是否固定状态栏，填写 true 或者 false
+  fixed: true # 是否固定状态栏，填写 true 或者 false
 
 # Menu 目錄
 menu:
@@ -258,6 +258,11 @@ footer:
   custom_text: 
   copyright: true # Copyright of theme and framework
 
+
+calendar:
+  single: true
+  root: calendar/
+
 # aside (側邊欄)
 # --------------------------------------
 
@@ -282,6 +287,8 @@ aside:
   card_announcement:
     enable: true
     content: 新人小站，多多关照
+  card_calendar:
+    enable: true
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -492,14 +499,16 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
+  enable: true
   appId: jEGVQyRqw7Cj0LIRWlkCR2mX-gzGzoHsz # leancloud application app id
   appKey: ynuisj4xUhWPtnqiWkxwRyhz # leancloud application app key
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: https://s2.loli.net/2023/07/08/ijyPhngQdNFKGe7.png
+  bg: https://s2.loli.net/2023/07/09/ifygV1j3sEmqpro.png
   visitor: false
   option:
     placeholder: 欢迎留言♪（＾∀＾●）ﾉｼ
+    enableQQ: true
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
@@ -536,7 +545,7 @@ twikoo:
   envId:
   region:
   visitor: false
-  option:
+  option: 
 
 # Giscus
 # https://giscus.app/
@@ -772,8 +781,8 @@ display_mode: light
 beautify:
   enable: true
   field: site # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  title-prefix-icon: '\f863'
+  title-prefix-icon-color: "#F47466"
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -908,7 +917,7 @@ aplayerInject:
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   enable: true
-  position: bottom-left
+  position: top-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
 
@@ -964,9 +973,17 @@ inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
   - <meta name="google-site-verification" content="P2CCTYZRF4J61VoS_tvvx8B0rXJwVjDASlQEyiHTY80" />
+  # 最新文章
+  - <link rel="stylesheet" href="/css/custom.css">
   bottom:
   # - <script src="xxxx"></script>
-
+  - <script src="/js/jquery.js"></script>
+  # 水波动画
+  - <script defer data-pjax src="/js/jquery.ripples.js"></script>
+  - <script defer data-pjax src="/js/ripples.js"></script>
+  # 日历
+  - <script data-pjax type="text/javascript" src="/js/languages.js"></script>
+  - <script data-pjax type="text/javascript" src="/js/calendar.js" ></script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
@@ -1003,7 +1020,7 @@ CDN:
   # gitalk:
   # gitalk_css:
   # blueimp_md5:
-  # valine:
+    valine: /js/Valine.min.js
   # disqusjs:
   # disqusjs_css:
   # twikoo:
