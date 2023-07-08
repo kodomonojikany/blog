@@ -3,7 +3,7 @@
 # --------------------------------------
 
 nav:
-  logo: /img/logo.png # 网站的 logo，支持图片，直接填入图片链接
+  logo: /image/logo.png # 网站的 logo，支持图片，直接填入图片链接
   display_title: true # 是否显示网站标题，填写 true 或者 false
   fixed: false # 是否固定状态栏，填写 true 或者 false
 
@@ -50,13 +50,23 @@ feed:
   autodiscovery: true
   template:
 
+# sitemap配置
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  template: ./sitemap_template.xml
+  template_txt: ./sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true
 
 
 # Image (圖片設置)
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/logo.png
+favicon: /image/logo.png
 
 # Avatar (頭像)
 avatar:
@@ -82,7 +92,7 @@ tag_img: https://s2.loli.net/2023/07/07/BhcLQilk1pvwj9A.jpg
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: https://s2.loli.net/2023/07/07/BhcLQilk1pvwj9A.jpg
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
@@ -91,7 +101,7 @@ category_img: https://s2.loli.net/2023/07/07/HwhNWXkxgm2C3EG.jpg
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: https://s2.loli.net/2023/07/07/HwhNWXkxgm2C3EG.jpg
 
 cover:
   # display the cover or not (是否顯示文章封面)
@@ -202,10 +212,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-  - img: /img/alipay.jpg
+  - img: /image/alipay.jpg
     link:
     text: 支付宝
-  - img: /img/wechat.png
+  - img: /image/wechat.png
     link:
     text: 微信
 
@@ -604,7 +614,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics: 
+google_analytics: G-D5TXT1KB6E
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
@@ -635,10 +645,10 @@ google_adsense:
 # --------------------------------------
 
 site_verification:
-# - name: google-site-verification
-#   content: xxxxxx
-# - name: baidu-site-verification
-#   content: xxxxxxx
+  - name: google-site-verification
+    content: P2CCTYZRF4J61VoS_tvvx8B0rXJwVjDASlQEyiHTY80
+  - name: baidu-site-verification
+    content: bbfa117e8e09760d95caaebac986da6e
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -770,14 +780,15 @@ beautify:
 font:
   global-font-size:
   code-font-size:
-  font-family:
-  code-font-family:
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link:
-  font-family:
+  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
+  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -952,6 +963,7 @@ css_prefix: true
 inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
+  - <meta name="google-site-verification" content="P2CCTYZRF4J61VoS_tvvx8B0rXJwVjDASlQEyiHTY80" />
   bottom:
   # - <script src="xxxx"></script>
 
