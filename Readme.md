@@ -1,6 +1,6 @@
 # npm需要安装的内容
-在博客根目录下执行
-- npm install  
+- npm install hexo-cli -g 
+- npm install  (博客根目录执行，之后都是)
 - npm install hexo-renderer-pug hexo-renderer-stylus --save
 - npm install hexo-generator-searchdb
 - npm install hexo-generator-search --save
