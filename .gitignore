@@ -14,3 +14,7 @@ gen
 
 # Node files
 node_modules
+
+# Hexo files
+public
+db.json
