@@ -1,6 +1,9 @@
-# npm需要安装的内容
+# 使用方式
+- git clone https://github.com/kodomonojikany/blog.git
+- 安装node
 - npm install hexo-cli -g 
-- npm install  (博客`cd blog`根目录执行，之后都是)
+- cd blog
+- npm install  (博客根目录执行，之后都是)
 - git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
 - npm install hexo-renderer-pug hexo-renderer-stylus --save
 - npm install hexo-generator-searchdb

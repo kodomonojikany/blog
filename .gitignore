@@ -18,3 +18,4 @@ node_modules
 # Hexo files
 public
 db.json
+themes
