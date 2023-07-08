@@ -5,7 +5,7 @@
 # Site
 title: 鹊の窝
 subtitle: '早起的虫儿被鸟吃'
-description: '生活嘛，开心最重要。来，笑一个♪（＾∀＾●）ﾉｼ '
+description: '生活嘛，开心最重要♪（＾∀＾●）ﾉｼ 。'
 keywords:
 author: cc
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://kodomonojikany.cyou/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,12 +96,25 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+plugins: hexo-generate-feed
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:kodomonojikany/kodomonojikany.github.io.git
+  branch: main
 
 
+markdown:
+    plugins:
+      - '@renbaoshuo/markdown-it-katex'
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+  template: ./search.xml

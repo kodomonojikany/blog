@@ -7,6 +7,7 @@ gen
 # Git files
 .github
 .git
+.deploy_git
 
 # MacOS files
 .DS_Store
