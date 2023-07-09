@@ -1,7 +1,9 @@
 mixin postUI(posts)
   - let newTitle= newPost()
   each article , index in page.posts.data
-    .recent-post-item
+    - let lastPost = firstpost !== 1 && is_current('/') ? true : false
+    - var firstpost = 1
+    .recent-post-item(class= (lastPost === true) ? 'firstpost-item' : '')
       -
         let link = article.link || article.path
         let title = article.title || _p('no_title')

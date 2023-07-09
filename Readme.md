@@ -4,7 +4,6 @@
 - npm install hexo-cli -g 
 - cd blog
 - npm install  (博客根目录执行，之后都是)
-- git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
 - npm install hexo-renderer-pug hexo-renderer-stylus --save
 - npm install hexo-generator-searchdb
 - npm install hexo-generator-search --save

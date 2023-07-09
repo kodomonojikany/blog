@@ -10,11 +10,20 @@ nav:
 # Menu 目錄
 menu:
   首页: / || fas fa-home
-  时间轴: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
-  友链: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
+  文章||fa-solid fa-book-open-cover||hide:
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open 
+  本站||fa-solid fa-globe||hide:
+    随便说说: / || fa-regular fa-comment  
+    友情链接: /link/ || fas fa-link
+    更新日志: / || fa-solid fa-bell
+  我的||fa-solid fa-address-card||hide:
+    电影: / || fa-solid fa-film
+    追番: / || fa-solid fa-music
+    游戏: / || fa-solid fa-gamepad
+    关于我: /about/ || fa-solid fa-circle-info
+
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -31,6 +40,7 @@ code_word_wrap: true  # hexo编译时代码自动换行
 #   icon: link || the description || color
 social:
   fa-solid fa-envelope: mailto:kodomojikany@hotmail.com || Email || #1E3050
+  fa-brands fa-github: https://github.com/kodomonojikany || Github || #1E3050
   fa-solid fa-rss: /atom.xml || RSS || #1E3050
 # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
 # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
@@ -61,7 +71,6 @@ sitemap:
   tags: true
   categories: true
 
-
 # Image (圖片設置)
 # --------------------------------------
 
@@ -77,7 +86,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://s2.loli.net/2023/07/07/CmGyofk89DcLHzA.png
+index_img: https://s2.loli.net/2023/07/09/l3WcLzdFT7x8OQS.png
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://s2.loli.net/2023/07/07/eLDGMH4pftaY29E.jpg
@@ -140,6 +149,9 @@ cover:
 error_img:
   flink: /img/friend_404.gif
   post_page: /img/404.jpg
+
+# 友链样式，butterfly为默认样式，volantis为站点卡片样式.flexcard为弹性卡片样式
+flink_style: flexcard # butterfly | volantis | flexcard
 
 # A simple 404 page
 error_404:
@@ -211,6 +223,7 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: true
+  coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.16/audio/coin.mp3
   QR_code:
   - img: /image/alipay.jpg
     link:
@@ -280,7 +293,7 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fa-brands fa-github
       text: Github
       link: https://github.com/kodomonojikany
@@ -683,6 +696,24 @@ site_verification:
 #   meta_theme_color_light: "ffffff"
 #   meta_theme_color_dark: "#0d0d0d"
 
+theme_color:
+  enable: true
+  main: "#ed709b"
+  paginator: "#ed709b"
+  button_hover: "#81ffef"
+  text_selection: "#ed709b"
+  link_color: "#ed709b"
+  meta_color: "#858585"
+  hr_color: "#ed709b"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#ed709b"
+  blockquote_padding_color: "#ed709b"
+  blockquote_background_color: "#ed709b"
+  scrollbar_color: "#ed709b"
+  meta_theme_color_light: "ffffff"
+  meta_theme_color_dark: "#0d0d0d"
+
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
 # The position of site info, eg: 300px/300em/300rem/10% (主頁標題距離頂部距離)
@@ -700,9 +731,10 @@ tag_ui: # 留空或 index
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 background: 
+#background: url(https://s2.loli.net/2023/07/09/l3WcLzdFT7x8OQS.png)
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -738,8 +770,8 @@ canvas_ribbon:
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
-  enable: true
-  mobile: true
+  enable: false
+  mobile: false
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
@@ -787,16 +819,16 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
-  code-font-size:
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  global-font-size: 18px
+  code-font-size: 
+  font-family: ZZAW, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font_link: /css/font.css
+  font-family: ZZAW, Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 
 
 # The setting of divider icon (水平分隔線圖標設置)
@@ -838,9 +870,9 @@ preloader:
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 1
+  source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: 
+  pace_css_url: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css
 
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
@@ -973,17 +1005,30 @@ inject:
   head:
   # - <link rel="stylesheet" href="/xxx.css">
   - <meta name="google-site-verification" content="P2CCTYZRF4J61VoS_tvvx8B0rXJwVjDASlQEyiHTY80" />
-  # 最新文章
+  # 字体css
+  - <link rel="stylesheet" href="/css/font.css">
+  # 自定义css
   - <link rel="stylesheet" href="/css/custom.css">
+  # 打赏投币菜单
+  - <link rel="stylesheet" href="/css/coin.css">
   bottom:
   # - <script src="xxxx"></script>
   - <script src="/js/jquery.js"></script>
-  # 水波动画
-  - <script defer data-pjax src="/js/jquery.ripples.js"></script>
-  - <script defer data-pjax src="/js/ripples.js"></script>
   # 日历
   - <script data-pjax type="text/javascript" src="/js/languages.js"></script>
   - <script data-pjax type="text/javascript" src="/js/calendar.js" ></script>
+  # 导航栏设置
+  - <script defer data-pjax src="/js/nav.js"></script>
+  # 落樱特效
+  - <script defer data-pjax src="/js/sakura.js"></script>
+  # 星空特效
+  - <canvas id="universe"></canvas>
+  - <script defer data-pjax src="/js/universe.js"></script>
+  # foot设置
+  - <script defer data-pjax src="/js/foot.js"></script>
+  - <script defer data-pjax src="/js/coin.js"></script>
+  # 打赏投币菜单
+  - <link rel="stylesheet" href="/css/coin.css">
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
