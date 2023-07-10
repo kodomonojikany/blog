@@ -144,3 +144,68 @@ search:
 #双栏美化
 butterfly_article_double_row:
   enable: true
+
+bangumi: # 追番设置
+  enable: true
+  source: bili
+  bgmInfoSource: 'bgmApi'
+  path:
+  vmid: 12200732
+  title: '追番列表'
+  quote: '快追不动了—— ૮₍ ˊ ᵔ ˋ₎ა'
+  show: 1
+  lazyload: false
+  srcValue: '__image__'
+  lazyloadAttrName: 'data-src=__image__'
+  loading:
+  showMyComment: false
+  pagination: false
+  metaColor:
+  color:
+  webp:
+  progress:
+  extraOrder:
+  proxy:
+    host: '代理host'
+    port: '代理端口'
+  extra_options:
+    key: value
+cinema: # 追剧设置
+  enable: true
+  path:
+  vmid: 12200732
+  title: '影剧列表'
+  quote: '快追不动了—— ૮₍ ˊ ᵔ ˋ₎ა'
+  show: 1
+  lazyload: true
+  srcValue: '__image__'
+  lazyloadAttrName: 'data-src=__image__'
+  loading:
+  metaColor:
+  color:
+  webp:
+  progress:
+  extraOrder:
+  extra_options:
+    key: value
+
+# 游戏配置
+steam:
+  enable: true
+  steamId: '76561198312441577' #steam 64位Id
+  apiKey: 'E5F2C13F4403B0B5A30D10609C19EDEC' #steam api key
+  steamInfos: # 多账号配置
+    - id: '*****' #steam 64位Id
+      path: # 为每个帐号游戏库单独配置页面路径，默认`steamgames/{steamId}/index.html` # 兼容以下配置项
+  freeGames: true
+  path:
+  title: Steam游戏库
+  quote: '早买早享受，晚买打折扣，不买免费送 o(一︿一+)o'
+  tab: recent
+  length: 10
+  imgUrl: ''
+  proxy:
+    host:
+    port:
+  extra_options:
+    key: value

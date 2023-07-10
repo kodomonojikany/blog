@@ -19,9 +19,9 @@ menu:
     友情链接: /link/ || fas fa-link
     更新日志: / || fa-solid fa-bell
   我的||fa-solid fa-address-card||hide:
-    电影: / || fa-solid fa-film
-    追番: / || fa-solid fa-music
-    游戏: / || fa-solid fa-gamepad
+    影剧: /cinemas/ || fa-solid fa-film
+    追番: /bangumis/ || fa-solid fa-tv
+    游戏: /steamgames/ || fa-solid fa-gamepad
     关于我: /about/ || fa-solid fa-circle-info
 
 
@@ -472,7 +472,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Valine # Valine,Disqus
+  use: Twikoo,Valine # Valine,Disqus
   text: false # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -555,7 +555,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: http://124.222.214.98:8360/
   region:
   visitor: false
   option: 
@@ -700,7 +700,7 @@ theme_color:
   enable: true
   main: "#ed709b"
   paginator: "#ed709b"
-  button_hover: "#81ffef"
+  button_hover: "#4979c0"
   text_selection: "#ed709b"
   link_color: "#ed709b"
   meta_color: "#858585"
@@ -870,7 +870,7 @@ preloader:
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 2
+  source: 1
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css
 
@@ -1026,9 +1026,10 @@ inject:
   - <script defer data-pjax src="/js/universe.js"></script>
   # foot设置
   - <script defer data-pjax src="/js/foot.js"></script>
-  - <script defer data-pjax src="/js/coin.js"></script>
   # 打赏投币菜单
-  - <link rel="stylesheet" href="/css/coin.css">
+  - <script defer data-pjax src="/js/coin.js"></script>
+  # 站点动态title
+  - <script defer data-pjax src="/js/title.js"></script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
