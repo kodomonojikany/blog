@@ -144,3 +144,10 @@
               a(href=url_for(page.path) + '#post-comment')
                 span.artalk-count
                   i.fa-solid.fa-spinner.fa-spin
+                  
+      span.post-meta-separator |
+      span.post-meta-orlike
+        i.fa-solid.fa-thumbs-up.fa-fw.post-meta-icon
+        span.post-meta-label= '点赞数:'
+        a(href=url_for(page.path) + '#orlike-box')
+            span.orlike-count

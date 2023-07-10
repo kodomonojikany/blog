@@ -472,7 +472,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Twikoo,Waline # Valine,Disqus Twikoo
+  use: Twikoo # Valine,Disqus Twikoo
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -1015,6 +1015,8 @@ inject:
   bottom:
   # - <script src="xxxx"></script>
   - <script src="/js/jquery.js"></script>
+  # 点赞
+  - <script defer data-pjax src="/js/orlike.js"></script>
   # 日历
   - <script data-pjax type="text/javascript" src="/js/languages.js"></script>
   - <script data-pjax type="text/javascript" src="/js/calendar.js" ></script>
@@ -1031,6 +1033,7 @@ inject:
   - <script defer data-pjax src="/js/coin.js"></script>
   # 站点动态title
   - <script defer data-pjax src="/js/title.js"></script>
+
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改

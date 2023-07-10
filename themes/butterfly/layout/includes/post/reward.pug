@@ -19,3 +19,16 @@ if theme.reward.coinAudio
   - var coinAudio = theme.reward.coinAudio ? url_for(theme.reward.coinAudio) : 'https://npm.elemecdn.com/akilar-candyassets@1.0.16/audio/coin.mp3'
   audio#coinAudio(src=coinAudio)
 script(defer src=url_for(theme.CDN.coin_js))
+
+#orlike-box.orlike-box
+  script.
+    (() => {
+      function loadOrLike () {
+        new OrLike({
+          serverUrl: "https://orlike.kodomonojikany.cyou/",
+          el: ".orlike-box",
+          days: 30,
+        });
+      }
+      window.pjax ? loadOrLike() : window.addEventListener('load', loadOrLike)
+    })()
