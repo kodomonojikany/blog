@@ -139,10 +139,9 @@
               if (!fs.existsSync(path.join(__dirname, "/data/"))) {
                   fs.mkdirsSync(path.join(__dirname, "/data/"));
               }
-              /* 主要是 这里往下三行改了一下数据的排序*/
-              let gameData = games.slice(0, length);
+              let gameData = games.slice(0, 1000);
               var data = gameData.sort(sortJ);
-              fs.writeFile(path.join(__dirname, `/data/${steamId}.json`), JSON.stringify(data), err => {
+              fs.writeFile(path.join(__dirname, `/data/${steamId}.json`), JSON.stringify(data.slice(0, length)), err => {
                   if (err) {
                       log.info(`Failed to write data to ${steamId}.json`);
                       console.log(err);
@@ -159,8 +158,8 @@
   }
   
   ```
-
   
+
 # 部署顺序
 1. hexo clean
 2. hexo bangumi -u     # 更新追番数据
