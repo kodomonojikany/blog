@@ -472,8 +472,8 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: Twikoo,Valine # Valine,Disqus
-  text: false # Display the comment name next to the button
+  use: Twikoo,Waline # Valine,Disqus Twikoo
+  text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
@@ -513,8 +513,8 @@ gitalk:
 # https://valine.js.org
 valine:
   enable: true
-  appId: jEGVQyRqw7Cj0LIRWlkCR2mX-gzGzoHsz # leancloud application app id
-  appKey: ynuisj4xUhWPtnqiWkxwRyhz # leancloud application app key
+  appId: 9bZMUNKCtty8A0Sj6zLyadRa-MdYXbMMI # leancloud application app id
+  appKey: tHTqV6aEnCGfaivi2qSet77x # leancloud application app key
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: https://s2.loli.net/2023/07/09/ifygV1j3sEmqpro.png
@@ -522,15 +522,16 @@ valine:
   option:
     placeholder: 欢迎留言♪（＾∀＾●）ﾉｼ
     enableQQ: true
+    recordIP: true
 
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://comment-pearl.vercel.app/  # Waline server address url
+  serverURL: https://waline.kodomonojikany.cyou/ # Waline server address url
   bg: # waline background
   pageview: false
   option: 
-    dark: 'auto'
+    dark: 'html[data-theme="dark"]'
     
 
 # utterances
@@ -555,7 +556,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: http://124.222.214.98:8360/
+  envId: https://twikoo.kodomonojikany.cyou/
   region:
   visitor: false
   option: 
