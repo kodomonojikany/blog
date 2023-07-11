@@ -14,14 +14,14 @@ menu:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open 
-  本站||fa-solid fa-globe||hide:
-    随便说说: / || fa-regular fa-comment  
+  本站||fa-solid fa-globe||hide:  
     友情链接: /link/ || fas fa-link
     更新日志: / || fa-solid fa-bell
   我的||fa-solid fa-address-card||hide:
+    #碎碎念: /talks/ || fa-regular fa-comment
     影剧: /cinemas/ || fa-solid fa-film
     追番: /bangumis/ || fa-solid fa-tv
-    # 游戏: /steamgames/ || fa-solid fa-gamepad
+    #游戏: /steamgames/ || fa-solid fa-gamepad
     关于我: /about/ || fa-solid fa-circle-info
 
 
