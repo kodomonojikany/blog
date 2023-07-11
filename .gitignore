@@ -13,8 +13,8 @@ gen
 .DS_Store
 
 # Node files
-node_modules
-!node_modules/hexo-steam-games
+node_modules/*
+!node_modules/hexo-steam-games/
 
 # Hexo files
 public
