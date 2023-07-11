@@ -21,7 +21,7 @@ menu:
   我的||fa-solid fa-address-card||hide:
     影剧: /cinemas/ || fa-solid fa-film
     追番: /bangumis/ || fa-solid fa-tv
-    游戏: /steamgames/ || fa-solid fa-gamepad
+    # 游戏: /steamgames/ || fa-solid fa-gamepad
     关于我: /about/ || fa-solid fa-circle-info
 
 
