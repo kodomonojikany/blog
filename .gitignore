@@ -14,6 +14,7 @@ gen
 
 # Node files
 node_modules
+!node_modules/hexo-steam-games
 
 # Hexo files
 public
