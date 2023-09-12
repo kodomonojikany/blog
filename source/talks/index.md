@@ -6,11 +6,6 @@ aside: false
 top_img: https://s2.loli.net/2023/07/07/IBWYzeSwdmscuG6.png
 ---
 
-<head>
-  <!-- ... -->
-  <script src="https://cdn.jsdelivr.net/gh/Uyoahz26/daodao@main/dist/qexo-dao.min.js"></script>
-  <!-- ... -->
-</head>
 <body>
   <!-- ... -->
   <div id="qexoDaoDao"></div>
