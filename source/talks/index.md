@@ -23,7 +23,7 @@ top_img: https://s2.loli.net/2023/07/07/IBWYzeSwdmscuG6.png
       limit: 10,
       fromColor: "#ed709b",
       labelColor: "#ffffff",
-      useLoadingImg: "true",
+      useLoadingImg: true,
       loadingImg: "https://s2.loli.net/2023/07/11/DgQGM5LYpxSORhq.gif",
       baseURL: "https://qexo.kodomonojikany.cyou/",
     }).then(function (){
